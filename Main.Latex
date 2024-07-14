@@ -1,0 +1,253 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+ \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Anurag kushwaha} \\ \vspace{1pt}
+    \small +91 8587822762 $|$ \href{mailto:anuragkush051@gmail.com}{\underline{anuragkush051@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/anurag0s1/}{\underline{linkedin.com/in/anurag0s1/}} $|$
+    \href{https://github.com/ANURAG0S1}{\underline{github.com/ANURAG0S1}}
+\end{center}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{PROFESSIONAL SUMMARY}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Frontend Engineer with 2+ years of relevant experience working in small and large teams to develop
+interactive, user-friendly, and feature-rich web applications. A self-motivated and lifelong learner with expertise
+in developing scalable UI applications in JavaScript/TypeScript with 10+ million users by adhering to UI
+architectural best practices.
+
+    }}
+ \end{itemize}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript/ES6, HTML/CSS, TypeScript,SASS, SQL} \\
+     \textbf{Frameworks}{: React, Angular, Node.js,Express.JS,BootStrap, Tailwind } \\
+     \textbf{Libraries}{: Material UI, Axios, RxJS}\\
+     \textbf{Tools}{: Git, Docker, NPM, Jenkins, Google Cloud Platform, VS Code, Grafana} \\
+   
+    }}
+ \end{itemize}
+%
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Frontend Executive}{  August 2023 -- Present }
+      {Adani Digital Labs}{Gurgaon, IN}
+      \resumeItemListStart
+        \resumeItem{ Maintained integration plugin of trainman providing trains feature on
+Adani one App.}
+        \resumeItem{Intergrated third party APIs like IRCTC, razorpay, AdPushup, Google Ad \& analytics.}
+        \resumeItem{Conducted comprehensive code reviews to ensure the maintenance of
+high code quality standards, offering valuable suggestions and
+enhancements to fellow developers.}
+  \resumeItem{Worked with various libraries like RxJS, momentJS, MaterialUI.}
+  \resumeItem{Implemented security best practices, including input validation, secure
+authentication mechanisms, and protection against common
+vulnerabilities like XSS and CSRF.}
+      \resumeItemListEnd
+
+ 
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer}{December 2021 -- July 2023  }
+      {Trainman}{Gurgaon, IN}
+      \resumeItemListStart
+        \resumeItem{White Label Solution : Created integration plugin of trainman, utilising
+same onBoarded 3 companies}
+        \resumeItem{Well-versed in building responsive and dynamic web applications with an
+emphasis on usability, performance, and accessibility.}
+ \resumeItem{Iterated user interfaces (homepage, search, profile, bookings, payments, etc) to simplify search functionality and payment processes.}
+
+
+
+        \resumeItem{Implemented Services to manage google ads and analytics. }
+  \resumeItem{Successfully migrated the Angular codebase from v9 to v13, resulting in
+a 30\% improvement in application performance.}
+  \resumeItem{Implemented SSR for better SEO ranking and reduced page load time
+from 6s to 2.5s.} 
+\resumeItem{ Performance monitoring with tools like Lighthouse and New Relic to
+identify bottlenecks and improve web application performance.}
+    \resumeItemListEnd
+
+
+ 
+
+    \resumeSubheading
+      {Frontend Engineer}{Septmeber 2020 -- December 2020 }
+      {RYD Labs --- remote}{Noida, IN}
+      \resumeItemListStart
+        \resumeItem{Involved in planning feature implementation strategies and end to end
+implementation of product features.}
+        
+\resumeItem{  Successfully resolved complex UI/UX challenges by leveraging React's
+component lifecycle, custom hooks, and third-party libraries}
+\resumeItem{ Transformed Figma design into a high-performance web app
+using React, and CSS, resulting in 20\% higher
+engagement.}
+
+
+    \resumeItemListEnd
+
+ 
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      
+      \resumeProjectHeading
+          {\textbf{Today's Recipe} $|$ \emph{Spoonacular API, React.JS, JavaScript, Node.JS, Git}} {}
+          \resumeItemListStart
+             \resumeItem{ Developed a dynamic recipe application using Spoonacular API, integrating real-time data retrieval and display using React.JS and Node.JS.}
+            \resumeItem{One can submit the mood/taste of ideal food they want to eat, based on the preferences, food recipes are populated.}
+            \resumeItem{Integrated user authentication and authorization features using JWT and bcrypt, ensuring secure access and data protection.}
+            \resumeItem{Employed Node.JS for backend development, leveraging Express to build robust APIs that supported application functionalities such as user preferences and recipe bookmarking.}
+         
+           
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Starex University}{Gurgaon, Haryana}
+      {Bachelor of Technology in Computer Science}{April 2019 -- May 2023}
+   
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
